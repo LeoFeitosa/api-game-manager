@@ -47,7 +47,7 @@ namespace XGames.Domain.Services
         public AdicionarJogadorRequest AdicionarJogador(AdicionarJogadorRequest request)
         {
             Guid id = _repositoryJogador.AdicionarJogador(request);
-            return new AdicionarJogadorRequest(Id = id, Message = "Operação realizada com sucesso",);
+            return new AdicionarJogadorRequest(Id = id, Message = "Operação realizada com sucesso");
         }
 
         private bool IsEmail(string email)
